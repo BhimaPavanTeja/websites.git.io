@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Little Lemon</title>
+</head>
+
+<body>
+    <div class="ll"> Little Lemon </div>
+    <div class="menu"> Menu </div>
+    <div class="container">
+    
+        <!-- Section starts: Tacos -->
+        <div class="section">
+            
+            <h3 class="meal-type">Tacos</h2>
+                <!-- Item Starts -->
+                <div class="item-name">
+                    
+                    <div class="label">Carne Asada</div>
+                    <b class="low">$10</b>
+                    <div class="description"> This in taco good and tasty.</div>
+                </div>
+
+                <div class="item-name">
+                    <div class="label">Al Pastor</div>
+                    <b>$10</b>
+                    <div class="description"> This in taco good and tasty.</div>
+                </div>
+
+                <div class="item-name">
+                    <div class="label">Cabeza</div>
+                    <b class="low">$10</b>
+                    <div class="description"> This in taco good and tasty.</div>
+                </div>
+
+                <div class="item-name">
+                    <div class="label">Lengua</div>
+                    <b>$10</b>
+                    <div class="description"> This in taco good and tasty.</div>
+                </div>
+                <!-- Item Ends -->
+
+        </div>
+        <!-- Section ends: Tacos -->
+
+        <!-- Section starts: Burritos -->
+        <div class="section">
+            <h3 class="meal-type">Burritos</h2>
+                <!-- Item Starts -->
+                <div class="item-name">
+                    <div class="label">Chicken</div>
+                    <b>$12</b>
+                    <div class="description"> This in taco good and tasty.</div>
+                </div>
+
+                <div class="item-name">
+                    <div class="label">Bean and Cheese</div>
+                    <b>$12</b>
+                    <div class="description"> This in taco good and tasty.</div>
+                </div>
+
+                <div class="item-name">
+                    <div class="label">Veggie</div>
+                    <b>$12</b>
+                    <div class="description"> This in taco good and tasty.</div>
+                </div>
+                <!-- Item Ends -->
+
+        </div>
+        <!-- Section ends: Tacos -->
+
+    </div>
+</body>
+<style>
+    *{
+    font-family: Monaco;
+     }
+     body {
+        background-image: url(https://i.pinimg.com/originals/9c/ae/22/9cae2283701336fdde02eec3af91ece9.jpg);
+     }
+ .ll{
+    text-align: center;
+    color: red;
+          }
+.menu {
+    font-size: 0.7cm;
+    color: black;
+    text-align: center;
+}
+.ll{
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #495E57;
+   }
+.container {
+    max-width: 800px;
+    display: grid; /* Instead of htis we can use display: flex; */
+    grid-template-areas: "nav main";  /* This is removed when above one is added */
+    justify-content: center;
+    background-color:#97f3ff;
+    border-radius: 10px;
+    top: 20%;
+    left: 30%;
+    transform: ( -50%, -50%);
+    position: absolute;
+}
+.section {
+    padding: 10px;
+}
+.label {
+    font-weight: bold;
+}
+.description {
+    font-style: italic;
+    border-top: 2px solid #495E57;
+}
+.item-name {
+    margin: 25px;
+    font-size: 12px;
+}
+b {
+    float: right;
+    margin-top: -15px;
+    color: darkcyan;
+}
+div > h3 {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+    color: #495E57;
+}
+.label + .low {
+    color: brown;
+}
+div ~ div {
+    color: rgb(21, 21, 21);
+}
+</style>
+</html>

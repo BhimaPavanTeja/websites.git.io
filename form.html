@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Basic input types</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <style>
+      html, input {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+        background-image: url(https://th.bing.com/th/id/R.5bcd72ce9308cf5ff5c251f9b78a5e26?rik=%2bdZ0nenngS5Zpg&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f02%2fbeautiful-mountain.jpg&ehk=13Qa308guXXwbNR4xV0aKRbk6yDrBr4Y%2fs07UHwUZao%3d&risl=&pid=ImgRaw&r=0);
+      }
+
+      form {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      div {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      label, input, button {
+        font-size: 14px;
+        line-height: 1.5
+      }
+
+      label {
+        text-align: right;
+        width: 30%;
+        margin-right: 2%;
+      }
+
+      input {
+        flex: auto;
+      }
+
+      button {
+        width: 60%;
+        margin: 0 auto;
+        background-color: blue;
+        border-radius: 10px;
+        color: white;
+      }
+      h1 {
+        display: flex;
+        text-align: center;
+      }
+      a {
+        color: white;
+      }
+    </style>
+   </head>
+  <body>
+    <h1>User Login / Sign Up</h1>
+    <form onsubmit="callvalue()">
+      <div>
+        <label for="text"><i class="fa-regular fa-user"> user name</i></label>
+        <input type="text" id="text" name="text">
+      </div>
+      <div>
+        <label for="email"><i class="fa-solid fa-envelope"> email</i></label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div>
+        <label for="pwd"><i class="fa-solid fa-key"> password</i></label>
+        <input type="password" id="pwd" name="pwd">
+      </div>
+      <div>
+        <label for="url"><i class="fa-solid fa-link"> url</i></label>
+        <input type="url" id="url" name="url">
+      </div>
+      <div>
+        <label for="number"><i class="fa-solid fa-square-phone-flip"> number</i></label>
+        <input type="number" id="number" name="number">
+      </div>
+      <div>
+        <label for="tel"><i class="fa-solid fa-mobile-retro"> tel</i></label>
+        <input type="tel" id="tel" name="tel">
+      </div>
+      <div>
+        <label for="search"><i class="fa-solid fa-magnifying-glass"> search</i></label>
+        <input type="search" id="search" name="search">
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+    
+</body>
+  </html>
+<script type="text/javascript">
+function callvalue() {
+  var name = document.getElementById("text").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("pwd").value;
+  var url = document.getElementById("url").value;
+  var number = document.getElementById("number").value;
+  var tel = document.getElementById("tel").value;
+  var search = document.getElementById("search").value;
+
+  document.writeln("your Info: <br>"+"name: "+name+"<br>");
+  document.writeln("Your email: "+email+"<br>");
+  document.writeln("Your password: "+pwd+"<br>");
+  document.writeln("Your url: "+url+"<br>");
+  document.writeln("Your number: "+number+"<br>");
+  document.writeln("Your tel: "+tel+"<br>");
+  document.writeln("You searched "+search+"<br>");
+}
+</script>
