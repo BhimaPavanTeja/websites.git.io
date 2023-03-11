@@ -48,13 +48,13 @@ li {
     font-family: cursive;
 }
 a {
-    padding: 55px;
+    padding: 5px 55px;
     color: white;
 }
 .one {
     background-image: url(Screenshot_20230307_101831.png);
     background-repeat: no-repeat;
-    background-size: 1200px;
+    background-size: 1600px;
     border-radius: 10px;
     color: white;
     margin: 10px;
