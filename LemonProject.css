@@ -168,3 +168,6 @@ p1 {
     font-weight: 300;
     text-decoration: none;
   }
+  a {
+    text-decoration: none;
+  }
