@@ -1,142 +1,119 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Little Lemon</title>
+	<title>Menu</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			margin: 0;
+			padding: 0;
+		}
+		
+		h1 {
+			font-size: 36px;
+			color: #333;
+			text-align: center;
+			margin: 30px 0;
+		}
+		
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		.menu {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.menu li {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			padding: 20px 0;
+			border-bottom: 1px solid #ccc;
+		}
+		
+		.menu li:last-child {
+			border-bottom: none;
+		}
+		
+		.menu img {
+			width: 100px;
+			height: 100px;
+			margin-right: 20px;
+			object-fit: cover;
+			object-position: center;
+		}
+		
+		.menu h2 {
+			font-size: 24px;
+			color: #333;
+			margin: 0;
+		}
+		
+		.menu p {
+			font-size: 16px;
+			color: #666;
+			margin: 10px 0;
+		}
+		
+		.menu .price {
+			font-size: 20px;
+			color: #333;
+			margin: 0;
+			margin-left: auto;
+		}
+	</style>
 </head>
-
 <body>
-    <div class="ll"> Little Lemon </div>
-    <div class="menu"> Menu </div>
-    <div class="container">
-    
-        <!-- Section starts: Tacos -->
-        <div class="section">
-            
-            <h3 class="meal-type">Tacos</h2>
-                <!-- Item Starts -->
-                <div class="item-name">
-                    
-                    <div class="label">Carne Asada</div>
-                    <b class="low">$10</b>
-                    <div class="description"> This in taco good and tasty.</div>
+	<div class="container">
+		<h1>Menu</h1>
+		<ul class="menu">
+			<li>
+				<img src="https://th.bing.com/th/id/OIP.zzaQoayIz0GDo2c2d0OOMAHaE8?pid=ImgDet&rs=1" alt="Food Item 1">
+				<div>
+					<h2>Food Item 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada commodo.</p>
+				</div>
+				<p class="price">₹500/-</p>
+			</li>
+			<li>
+				<img src="https://www.gannett-cdn.com/presto/2019/01/23/PNDN/95b07506-ff6d-45f2-bfce-a66c49dc10da-NDN_0123_IN_THE_KNOW_yard_house_13.jpg?width=520&height=390&fit=bounds&auto=webp" alt="Food Item 2">
+				<div>
+					<h2>Food Item 2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada commodo.</p>
+				</div>
+				<p class="price">₹100/-</p>
+			</li>
+			<li>
+				<img src="https://th.bing.com/th/id/R.fd28d053afaceb2d820976bb401927b4?rik=%2f34PbSCXyhEBKQ&riu=http%3a%2f%2fwww.recipeporn.com%2fwp-content%2fuploads%2f2015%2f05%2fTurmeric-Tea-A-Liver-Detox-Tea-298x300.jpg&ehk=3tkxY0SQcZBIX1oPFLwSh6V6eUAQ1JYWlNrl5gGJBBQ%3d&risl=&pid=ImgRaw&r=0" alt="Food Item 3">
+				<div>
+					<h2>Food Item 3</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada commodo.</p>
+				</div>
+				<p class="price">₹100/-</p>
+			</li>
+			<li>
+				<img src="https://static.toiimg.com/photo/msid-65164556/65164556.cms" alt="Food Item 4">
+				<div>
+					<h2>Food Item 4</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada commodo.</p>
+				</div>
+				<p class="price">₹200/-</p>
+            </li>
+            <li>
+                <img src="https://th.bing.com/th/id/OIP.C4aVXNlwxeJcs2mam86tBgHaHa?pid=ImgDet&rs=1" alt="Food Item 5">
+                <div>
+                    <h2>Food Item 5</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada commodo.</p>
                 </div>
-
-                <div class="item-name">
-                    <div class="label">Al Pastor</div>
-                    <b>$10</b>
-                    <div class="description"> This in taco good and tasty.</div>
-                </div>
-
-                <div class="item-name">
-                    <div class="label">Cabeza</div>
-                    <b class="low">$10</b>
-                    <div class="description"> This in taco good and tasty.</div>
-                </div>
-
-                <div class="item-name">
-                    <div class="label">Lengua</div>
-                    <b>$10</b>
-                    <div class="description"> This in taco good and tasty.</div>
-                </div>
-                <!-- Item Ends -->
-
-        </div>
-        <!-- Section ends: Tacos -->
-
-        <!-- Section starts: Burritos -->
-        <div class="section">
-            <h3 class="meal-type">Burritos</h2>
-                <!-- Item Starts -->
-                <div class="item-name">
-                    <div class="label">Chicken</div>
-                    <b>$12</b>
-                    <div class="description"> This in taco good and tasty.</div>
-                </div>
-
-                <div class="item-name">
-                    <div class="label">Bean and Cheese</div>
-                    <b>$12</b>
-                    <div class="description"> This in taco good and tasty.</div>
-                </div>
-
-                <div class="item-name">
-                    <div class="label">Veggie</div>
-                    <b>$12</b>
-                    <div class="description"> This in taco good and tasty.</div>
-                </div>
-                <!-- Item Ends -->
-
-        </div>
-        <!-- Section ends: Tacos -->
-
+                <p class="price">₹400/-</p>
+            </li>
+        </ul>
     </div>
 </body>
-<style>
-    *{
-    font-family: Monaco;
-     }
-     body {
-        background-image: url(https://free4kwallpapers.com/uploads/originals/2020/11/29/gradient--wallpaper.jpg);
-        background-repeat: no-repeat;
-        background-size: 2000px;
-     }
- .ll{
-    text-align: center;
-    color: red;
-          }
-.menu {
-    font-size: 0.7cm;
-    color: black;
-    text-align: center;
-}
-.ll{
-    font-size: 30px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #495E57;
-   }
-.container {
-    max-width: 800px;
-    display: grid; /* Instead of htis we can use display: flex; */
-    grid-template-areas: "nav main";  /* This is removed when above one is added */
-    justify-content: center;
-    background-color:#97f3ff;
-    border-radius: 10px;
-    top: 20%;
-    left: 30%;
-    transform: ( -50%, -50%);
-    position: absolute;
-}
-.section {
-    padding: 10px;
-}
-.label {
-    font-weight: bold;
-}
-.description {
-    font-style: italic;
-    border-top: 2px solid #495E57;
-}
-.item-name {
-    margin: 25px;
-    font-size: 12px;
-}
-b {
-    float: right;
-    margin-top: -15px;
-    color: darkcyan;
-}
-div > h3 {
-    font-size: 20px;
-    margin: 20px;
-    text-align: center;
-    color: #495E57;
-}
-.label + .low {
-    color: brown;
-}
-div ~ div {
-    color: rgb(21, 21, 21);
-}
-</style>
-</html>
+</html>    
