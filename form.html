@@ -11,7 +11,7 @@
       }
 
       body {
-        width: 90%;
+        width: 70%;
         max-width: 500px;
         margin: 0 auto;
         background-color: rgb(202, 223, 241);
@@ -23,6 +23,7 @@
         background-color: white;
         border-radius: 10px;
         box-shadow: 2px 3px black;
+        margin-bottom: 40px;
       }
 
       div {
@@ -32,67 +33,95 @@
         align-items: center;
       }
 
-      label, input, button {
+       input, button {
         font-size: 14px;
         line-height: 1.5
       }
 
-      label {
-        text-align: right;
-        width: 30%;
-        margin-right: 2%;
+      input {
+        margin: 0 auto;
+        width: 70%;
+        border-radius: 5px;
       }
 
-      input {
-        flex: auto;
+      i {
+        margin-left: 25px;
+      }
+      
+      input:placeholder-shown {
+        padding: 10px;
+      }
+
+      input[type="search"] {
+        width: 76%;
       }
 
       button {
-        width: 60%;
+        width: 50%;
+        height: 40px;
         margin: 0 auto;
-        background-color: blue;
+        background-color: rgb(30, 101, 159);
         border-radius: 10px;
         color: white;
+        font-weight: 700;
+        border: none;
+        box-shadow: 0px 2px 3px black;
       }
       h1 {
-        display: flex;
-        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       }
       a {
         color: white;
       }
+
+      button:hover {
+        background-color: rgb(65, 180, 230);
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      .head {
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 2px 3px black;
+      }
     </style>
    </head>
   <body>
+    <div class="head">
     <h1>User Login / Sign Up</h1>
+  </div>
     <form onsubmit="callvalue()">
       <div>
-        <label for="text"><i class="fa-regular fa-user"> user name</i></label>
-        <input type="text" id="text" name="text">
+        <i class="fa-regular fa-user"></i>
+        <input type="text" id="text" name="text" placeholder="user name">
       </div>
       <div>
-        <label for="email"><i class="fa-solid fa-envelope"> email</i></label>
-        <input type="email" id="email" name="email">
+       <i class="fa-solid fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder=" email">
       </div>
       <div>
-        <label for="pwd"><i class="fa-solid fa-key"> password</i></label>
-        <input type="password" id="pwd" name="pwd">
+       <i class="fa-solid fa-key"></i>
+        <input type="password" id="pwd" name="pwd" placeholder=" password">
       </div>
       <div>
-        <label for="url"><i class="fa-solid fa-link"> url</i></label>
-        <input type="url" id="url" name="url">
+        <i class="fa-solid fa-link"></i>
+        <input type="url" id="url" name="url" placeholder=" url">
       </div>
       <div>
-        <label for="number"><i class="fa-solid fa-square-phone-flip"> number</i></label>
-        <input type="number" id="number" name="number">
+        <i class="fa-solid fa-square-phone-flip"></i>
+        <input type="number" id="number" name="number" placeholder=" number">
       </div>
       <div>
-        <label for="tel"><i class="fa-solid fa-mobile-retro"> tel</i></label>
-        <input type="tel" id="tel" name="tel">
+       <i class="fa-solid fa-mobile-retro"></i>
+        <input type="tel" id="tel" name="tel" placeholder=" tel">
       </div>
       <div>
-        <label for="search"><i class="fa-solid fa-magnifying-glass"> search</i></label>
-        <input type="search" id="search" name="search">
+       <i class="fa-solid fa-magnifying-glass"></i>
+       <input type="search" id="search" name="search" placeholder=" search">
       </div>
       <div>
         <button>Submit</button>
