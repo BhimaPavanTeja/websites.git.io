@@ -70,7 +70,7 @@ h1 {
     margin: 10px;
     padding: 10px;
     transform-box: scaleX(50%) scaleY(50%);
-    transition: 2s;
+    transition: 1s;
     box-shadow: 5px 5px rgba(17, 17, 17, 0.379);
 }
 .three:hover {
