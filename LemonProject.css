@@ -100,8 +100,8 @@ p {
 .six {
     padding: 10px;
 }
-footer  p3 {
-    margin: 50px;
+p3 {
+    margin: 20px;
     border-top: 2px solid white;
     color: white;
 }
@@ -135,6 +135,9 @@ p1 {
 .foot {
     display: grid;
     grid-template-areas: "foot-l foot-m foot-n";
+    color: #808080;
+    font-size: 15px;
+    font-weight: 600;
 }
 .foot-2 a:hover {
     font-weight: 600;
@@ -144,12 +147,6 @@ p1 {
     font-size: 15px;
     font-weight: 300;
     text-decoration: none;
-  }
-
-  .foot {
-    color: #808080;
-    font-size: 15px;
-    font-weight: 600;
   }
   
   .foot-2 {
