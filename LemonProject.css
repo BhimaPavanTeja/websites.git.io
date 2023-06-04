@@ -39,6 +39,8 @@ footer div {
     flex: 1;
 }
 nav {
+    position: sticky;
+    top: 0;
     background-color: black;
     border-radius: 9px;
     height: 40px;
