@@ -40,7 +40,7 @@ footer div {
 }
 nav {
     position: sticky;
-    top: 0;
+    top: 10px;
     background-color: black;
     border-radius: 9px;
     height: 40px;
