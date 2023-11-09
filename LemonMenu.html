@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Menu</title>
 	<style>
@@ -9,111 +10,164 @@
 			margin: 0;
 			padding: 0;
 		}
-		
+
 		h1 {
 			font-size: 36px;
 			color: #333;
 			text-align: center;
 			margin: 30px 0;
 		}
-		
+
+		h2 {
+			text-align: center;
+		}
+
 		.container {
 			max-width: 800px;
 			margin: 0 auto;
 			padding: 20px;
 		}
-		
+
 		.menu {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
 		}
-		
-		.menu li {
+
+		li {
 			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			padding: 20px 0;
-			border-bottom: 1px solid #ccc;
+			margin: 20px;
+			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+			border-radius: 14px;
 		}
-		
-		.menu li:last-child {
-			border-bottom: none;
+
+		li img {
+			width: 30%;
+			height: auto;
+			border-radius: 10px 0px 0px 10px;
 		}
-		
-		.menu img {
-			width: 100px;
-			height: 100px;
+
+		.menu-card {
+			background: linear-gradient(to right, rgb(11, 208, 238), rgb(0, 255, 191));
+			border-radius: 0px 10px 10px 0px;
+		}
+
+		p {
+			margin: 0;
+			padding: 10px;
+		}
+
+		.price {
+			display: flex;
+			flex-direction: row-reverse;
+			background: linear-gradient(to right, rgb(211, 238, 11), rgb(250, 194, 7));
+			border-radius: 0px 0px 10px 0px;
+		}
+		.price:hover {
+			background: linear-gradient(to right, rgb(250, 7, 234), rgb(238, 11, 124));
+		}
+		button {
+			background-color: rgb(23, 228, 23);
+			margin: 5px;
 			margin-right: 20px;
-			object-fit: cover;
-			object-position: center;
+			margin-left: 10px;
+			font-size: 15px;
+			border-radius: 10px;
+			cursor: pointer;
 		}
-		
-		.menu h2 {
-			font-size: 24px;
-			color: #333;
-			margin: 0;
-		}
-		
-		.menu p {
-			font-size: 16px;
-			color: #666;
-			margin: 10px 0;
-		}
-		
-		.menu .price {
-			font-size: 20px;
-			color: #333;
-			margin: 0;
-			margin-left: auto;
+		@media only screen and (max-width:700px) {
+			li {
+				flex-direction: column;
+			}
+			li img {
+				width: 100%;
+				height: auto;
+				border-radius: 10px 10px 0px 0px;
+			}
+			.menu-card {
+				border-radius: 0px 0px 10px 10px;
+			}
+			.price {
+				flex-direction: row;
+				border-radius: 0px 0px 10px 10px;
+			}
 		}
 	</style>
 </head>
+
 <body>
 	<div class="container">
 		<h1>Menu</h1>
 		<ul class="menu">
 			<li>
 				<img src="https://th.bing.com/th/id/OIP.zzaQoayIz0GDo2c2d0OOMAHaE8?pid=ImgDet&rs=1" alt="Food Item 1">
-				<div>
+				<div class="menu-card">
 					<h2>Food Item 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada commodo.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada
+						commodo.</p>
+					<div class="price">
+						<button>order now</button>
+						<p>₹500/-</p>
+					</div>
 				</div>
-				<p class="price">₹500/-</p>
 			</li>
 			<li>
-				<img src="https://www.gannett-cdn.com/presto/2019/01/23/PNDN/95b07506-ff6d-45f2-bfce-a66c49dc10da-NDN_0123_IN_THE_KNOW_yard_house_13.jpg?width=520&height=390&fit=bounds&auto=webp" alt="Food Item 2">
-				<div>
+				<img src="https://www.gannett-cdn.com/presto/2019/01/23/PNDN/95b07506-ff6d-45f2-bfce-a66c49dc10da-NDN_0123_IN_THE_KNOW_yard_house_13.jpg?width=520&height=390&fit=bounds&auto=webp"
+					alt="Food Item 2">
+				<div class="menu-card">
 					<h2>Food Item 2</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada commodo.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada
+						commodo. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magnam.</p>
+					<div class="price">
+						<button>order now</button>
+						<p>₹100/-</p>
+					</div>
 				</div>
-				<p class="price">₹100/-</p>
 			</li>
 			<li>
-				<img src="https://th.bing.com/th/id/R.fd28d053afaceb2d820976bb401927b4?rik=%2f34PbSCXyhEBKQ&riu=http%3a%2f%2fwww.recipeporn.com%2fwp-content%2fuploads%2f2015%2f05%2fTurmeric-Tea-A-Liver-Detox-Tea-298x300.jpg&ehk=3tkxY0SQcZBIX1oPFLwSh6V6eUAQ1JYWlNrl5gGJBBQ%3d&risl=&pid=ImgRaw&r=0" alt="Food Item 3">
-				<div>
+				<img src="https://th.bing.com/th/id/R.fd28d053afaceb2d820976bb401927b4?rik=%2f34PbSCXyhEBKQ&riu=http%3a%2f%2fwww.recipeporn.com%2fwp-content%2fuploads%2f2015%2f05%2fTurmeric-Tea-A-Liver-Detox-Tea-298x300.jpg&ehk=3tkxY0SQcZBIX1oPFLwSh6V6eUAQ1JYWlNrl5gGJBBQ%3d&risl=&pid=ImgRaw&r=0"
+					alt="Food Item 3">
+				<div class="menu-card">
 					<h2>Food Item 3</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada commodo.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada
+						commodo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti, modi ducimus
+						totam temporibus quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus impedit
+						iste quos delectus quo? Atque asperiores magnam est doloribus eum! Lorem ipsum dolor sit amet.</p>
+					<div class="price">
+						<button>order now</button>
+						<p>₹100/-</p>
+					</div>
 				</div>
-				<p class="price">₹100/-</p>
 			</li>
 			<li>
 				<img src="https://static.toiimg.com/photo/msid-65164556/65164556.cms" alt="Food Item 4">
-				<div>
+				<div class="menu-card">
 					<h2>Food Item 4</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada commodo.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada
+						commodo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, quam.</p>
+					<div class="price">
+						<button>order now</button>
+						<p>₹200/-</p>
+					</div>
 				</div>
-				<p class="price">₹200/-</p>
-            </li>
-            <li>
-                <img src="https://th.bing.com/th/id/OIP.C4aVXNlwxeJcs2mam86tBgHaHa?pid=ImgDet&rs=1" alt="Food Item 5">
-                <div>
-                    <h2>Food Item 5</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada commodo.</p>
-                </div>
-                <p class="price">₹400/-</p>
-            </li>
-        </ul>
-    </div>
+			</li>
+			<li>
+				<img src="https://th.bing.com/th/id/OIP.C4aVXNlwxeJcs2mam86tBgHaHa?pid=ImgDet&rs=1" alt="Food Item 5">
+				<div class="menu-card">
+					<h2>Food Item 5</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nisl malesuada
+						commodo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, quisquam. Lorem
+						ipsum dolor sit amet consectetur, adipisicing elit. Fuga, voluptatem!
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur tempore illo nam. Lorem ipsum
+						dolor sit amet.</p>
+					<div class="price">
+						<button>order now</button>
+						<p>₹400/-</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
 </body>
-</html>    
+
+</html>
