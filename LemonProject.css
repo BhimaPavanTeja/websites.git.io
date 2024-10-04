@@ -20,6 +20,7 @@ header > img {
     margin-right: auto;
 }
 nav {
+    position: sticky;
     z-index: 1;
 }
 nav ul {
